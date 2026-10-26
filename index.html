@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEUROTECH — Cérebro & Computação</title>
+<style>
+:root{--bg:#080a0f;--fg:#f2f4f8;--muted:#9ba4b5;--blue:#6aa7ff;--line:#ffffff20}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif}
+header{height:82px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;letter-spacing:3px;color:white;text-decoration:none}.logo b{color:var(--blue)}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{font-size:12px;color:var(--muted);text-decoration:none}nav a:hover{color:white}
+.hero{min-height:calc(100vh - 140px);padding:10vh 8vw 8vh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:4vw;overflow:hidden}
+.kicker{color:var(--blue);font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:30px}
+h1{font-size:clamp(64px,10vw,145px);line-height:.82;letter-spacing:-.09em;font-weight:800}h1 span{color:var(--blue)}
+.intro{font-size:17px;line-height:1.7;color:#b3bbca;max-width:450px;margin-top:34px}
+.cta{display:inline-block;margin-top:32px;padding:15px 18px;border:1px solid #6aa7ff88;color:white;text-decoration:none;font-size:11px;letter-spacing:2px}
+.cta:hover{background:var(--blue);color:#07101f}
+.orbit{height:min(43vw,490px);min-height:290px;position:relative;display:grid;place-items:center}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #6aa7ff50;border-radius:50%;width:82%;aspect-ratio:1;transform:rotate(-25deg) scaleY(.55)}
+.orbit:after{width:100%;transform:rotate(38deg) scaleY(.38);border-color:#ffffff25}
+.core{width:43%;aspect-ratio:1;border-radius:48% 52% 43% 57%;background:radial-gradient(circle at 35% 30%,#8dc2ff,#2456a0 48%,#0c1830 74%);box-shadow:0 0 90px #3178e455;position:relative;filter:saturate(.8)}
+.core:before,.core:after{content:"";position:absolute;inset:15%;border:1px solid #c5e0ff80;border-radius:45% 55% 60% 40%;transform:rotate(35deg)}
+.core:after{inset:27%;transform:rotate(-35deg);border-color:#08152d}
+.dot{position:absolute;width:7px;height:7px;background:var(--blue);border-radius:50%;box-shadow:0 0 18px var(--blue)}.d1{top:20%;left:20%}.d2{right:13%;top:35%}.d3{bottom:18%;left:32%}
+.caption{position:absolute;bottom:4%;right:0;color:#778398;font-size:10px;letter-spacing:2px}
+footer{height:58px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);font-size:10px;color:#657083;letter-spacing:1px}
+@media(max-width:750px){header{height:auto;padding:22px 6%;align-items:flex-start;gap:20px;flex-direction:column}nav{gap:14px}.hero{grid-template-columns:1fr;padding:75px 7% 50px}.orbit{grid-row:1;height:300px}h1{font-size:clamp(62px,18vw,100px)}footer{gap:12px;flex-wrap:wrap;padding:18px 6%;height:auto}}
+</style></head>
+<body>
+<header><a class="logo" href="index.html">NEURO<b>TECH</b></a><nav><a href="cerebro.html">O cérebro</a><a href="interfaces.html">A interface</a><a href="aplicacoes.html">Casos reais</a><a href="etica.html">Limites</a></nav></header>
+<main class="hero">
+<section><p class="kicker">Neurociência · Engenharia · Computação</p><h1>MENTE<br>EM <span>SINAL.</span></h1><p class="intro">Interfaces cérebro-computador transformam certos padrões de atividade neural em comandos digitais. A pesquisa já saiu do campo da ficção — mas ainda tem limites importantes.</p><a class="cta" href="cerebro.html">ENTRAR NO PROJETO ↗</a></section>
+<div class="orbit" aria-label="Ilustração abstrata de atividade neural"><div class="core"></div><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><span class="caption">SINAL → INTERPRETAÇÃO → AÇÃO</span></div>
+</main>
+<footer><span>NEUROTECH / ESTUDO VISUAL</span><span>CIÊNCIA COM CONTEXTO · 2026</span></footer>
+</body></html>

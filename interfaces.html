@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A interface — NEUROTECH</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#0b0d12;color:#f2f4f8;font-family:Arial,Helvetica,sans-serif}
+header{padding:24px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #ffffff20}
+.logo{font-weight:800;letter-spacing:3px;color:white;text-decoration:none}.logo b{color:#6aa7ff}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:12px;color:#a0a8b8;text-decoration:none}nav a:hover{color:white}
+main{padding:7vh 8vw 8vh}.eyebrow{font-size:11px;color:#6aa7ff;letter-spacing:3px}
+h1{font-size:clamp(52px,8vw,105px);letter-spacing:-.08em;line-height:.92;margin:28px 0 20px;max-width:850px}
+.lead{max-width:580px;color:#aab2c1;line-height:1.8;font-size:15px}
+.pipeline{margin:75px 0 55px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #ffffff24}
+.step{min-height:215px;padding:25px 20px;position:relative;border-right:1px solid #ffffff24}.step:last-child{border:0}
+.step .n{font-size:11px;color:#6aa7ff;letter-spacing:2px}.symbol{height:55px;margin:25px 0 15px;display:flex;align-items:center;gap:5px}
+.wave i{display:block;width:5px;border-radius:4px;background:#6aa7ff}.wave i:nth-child(1){height:14px}.wave i:nth-child(2){height:32px}.wave i:nth-child(3){height:48px}.wave i:nth-child(4){height:22px}.wave i:nth-child(5){height:39px}.wave i:nth-child(6){height:17px}
+.chip{width:48px;height:40px;border:1px solid #6aa7ff;position:relative}.chip:before{content:"";position:absolute;inset:8px;border:1px solid #6aa7ff66}
+.nodes{display:flex;gap:7px;align-items:center}.nodes i{width:9px;height:9px;border-radius:50%;background:#6aa7ff;box-shadow:0 0 15px #6aa7ff88}
+.cursor{width:0;height:0;border-top:0;border-left:0;border-right:24px solid transparent;border-bottom:38px solid #6aa7ff;transform:rotate(-15deg)}
+.step h2{font-size:19px;margin-bottom:10px}.step p{font-size:12px;color:#9ca5b5;line-height:1.7}
+.note{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:start}.note h2{font-size:30px;line-height:1.2;max-width:380px}.note p{color:#aab2c1;font-size:14px;line-height:1.9}
+.next{display:inline-block;margin-top:50px;color:white;text-decoration:none;font-size:11px;letter-spacing:2px;border-bottom:1px solid #6aa7ff;padding-bottom:9px}
+@media(max-width:800px){header{align-items:flex-start;flex-direction:column}main{padding:55px 7%}.pipeline{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step{border-bottom:1px solid #ffffff24}.note{grid-template-columns:1fr;gap:20px}}
+@media(max-width:480px){.pipeline{grid-template-columns:1fr}.step{border-right:0}}
+</style></head>
+<body>
+<header><a class="logo" href="index.html">NEURO<b>TECH</b></a><nav><a href="index.html">Início</a><a href="cerebro.html">O cérebro</a><a href="interfaces.html">A interface</a><a href="aplicacoes.html">Casos reais</a><a href="etica.html">Limites</a></nav></header>
+<main>
+<p class="eyebrow">02 / Engenharia</p>
+<h1>Do sinal à ação.</h1>
+<p class="lead">Uma interface cérebro-computador (BCI) transforma sinais medidos em comandos digitais. O sistema precisa ser treinado para reconhecer padrões — não existe tradução universal de pensamentos.</p>
+<section class="pipeline">
+<article class="step"><span class="n">01 / CAPTAR</span><div class="symbol wave"><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>Registrar</h2><p>Sensores medem atividade cerebral por um método específico.</p></article>
+<article class="step"><span class="n">02 / FILTRAR</span><div class="symbol"><div class="chip"></div></div><h2>Processar</h2><p>O sistema reduz ruídos e organiza os dados coletados.</p></article>
+<article class="step"><span class="n">03 / DECODIFICAR</span><div class="symbol nodes"><i></i><i></i><i></i><i></i><i></i></div><h2>Reconhecer</h2><p>Um modelo identifica padrões associados à tarefa treinada.</p></article>
+<article class="step"><span class="n">04 / EXECUTAR</span><div class="symbol"><div class="cursor"></div></div><h2>Agir</h2><p>O comando pode mover um cursor, selecionar letras ou controlar um dispositivo.</p></article>
+</section>
+<section class="note"><h2>O desafio não é só captar o sinal. É interpretá-lo de forma confiável.</h2><p>Os resultados mudam conforme o equipamento, a tarefa, o treinamento e a pessoa. Sistemas implantados podem captar sinais com características diferentes dos sistemas externos, mas exigem cirurgia e avaliação rigorosa de segurança.</p></section>
+<a class="next" href="aplicacoes.html">VER PESQUISAS REAIS ↗</a>
+</main></body></html>

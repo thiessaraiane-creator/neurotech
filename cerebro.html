@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O cérebro — NEUROTECH</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#e9e8e2;color:#15191f;font-family:Arial,Helvetica,sans-serif}
+header{padding:24px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #15191f30}
+.logo{font-weight:800;letter-spacing:3px;color:#15191f;text-decoration:none}.logo b{color:#2769d8}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:12px;color:#555d68;text-decoration:none}nav a:hover{color:#2769d8}
+main{padding:7vh 8vw 9vh}.topline{display:flex;justify-content:space-between;gap:20px;color:#2769d8;text-transform:uppercase;letter-spacing:2px;font-size:10px}
+h1{font-size:clamp(52px,8vw,108px);line-height:.9;letter-spacing:-.075em;max-width:850px;margin:45px 0 55px}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}
+.brain{min-height:350px;position:relative;display:grid;place-items:center;background:#d9e0e8;overflow:hidden}
+.brain:before{content:"";position:absolute;width:290px;height:230px;border-radius:48% 52% 55% 45%;background:radial-gradient(circle at 35% 30%,#a7c8ff,#4277c9 60%,#203e72);filter:drop-shadow(15px 20px 15px #182d4a30);clip-path:polygon(18% 8%,35% 0,48% 12%,58% 2%,76% 12%,90% 28%,100% 45%,87% 58%,93% 78%,72% 92%,58% 84%,43% 100%,28% 86%,9% 88%,0 66%,9% 48%,2% 30%)}
+.brain:after{content:"";position:absolute;width:230px;height:170px;border-radius:50%;background:repeating-linear-gradient(115deg,transparent 0 13px,#d9e8ff99 14px 16px,transparent 17px 26px);clip-path:polygon(18% 8%,35% 0,48% 12%,58% 2%,76% 12%,90% 28%,100% 45%,87% 58%,93% 78%,72% 92%,58% 84%,43% 100%,28% 86%,9% 88%,0 66%,9% 48%,2% 30%)}
+.tag{position:absolute;z-index:2;background:#f7f8fa;padding:8px 10px;font-size:10px;letter-spacing:1px}.t1{top:12%;left:7%}.t2{bottom:12%;right:6%}
+.copy{max-width:520px}.copy h2{font-size:28px;margin-bottom:15px}.copy p{font-size:15px;line-height:1.85;color:#515a66;margin-bottom:22px}
+.fact{border-top:1px solid #15191f40;padding-top:18px;font-size:13px;line-height:1.7}.fact strong{color:#2769d8}
+.bottom{margin-top:65px;display:flex;justify-content:space-between;gap:25px;align-items:flex-end;border-top:1px solid #15191f35;padding-top:22px}.bottom p{max-width:570px;font-size:13px;line-height:1.7;color:#515a66}.next{color:#15191f;text-decoration:none;font-size:11px;letter-spacing:2px;border-bottom:1px solid #2769d8;padding-bottom:8px;white-space:nowrap}
+@media(max-width:700px){header{align-items:flex-start;flex-direction:column}main{padding:55px 7%}.layout{grid-template-columns:1fr}.brain{min-height:300px}.bottom{align-items:flex-start;flex-direction:column}}
+</style></head>
+<body>
+<header><a class="logo" href="index.html">NEURO<b>TECH</b></a><nav><a href="index.html">Início</a><a href="cerebro.html">O cérebro</a><a href="interfaces.html">A interface</a><a href="aplicacoes.html">Casos reais</a><a href="etica.html">Limites</a></nav></header>
+<main>
+<div class="topline"><span>01 / Base biológica</span><span>Neurônios · sinais · medição</span></div>
+<h1>O cérebro produz<br>atividade elétrica.</h1>
+<div class="layout">
+<div class="brain"><span class="tag t1">ATIVIDADE NEURAL</span><span class="tag t2">SINAL MEDIDO ≠ PENSAMENTO</span></div>
+<section class="copy"><h2>O que os sensores captam?</h2><p>Neurônios comunicam-se por sinais elétricos e químicos. Instrumentos como o EEG medem variações elétricas associadas à atividade de grupos de neurônios.</p><p>Esses registros são complexos: músculos, movimento e ruído podem interferir. Por isso, o sinal precisa ser processado antes de ser usado por um computador.</p><div class="fact"><strong>O ponto principal</strong><br>Um sensor não lê pensamentos como frases. Sistemas treinados procuram padrões relacionados a uma tarefa específica.</div></section>
+</div>
+<div class="bottom"><p>Existem métodos não invasivos, com sensores externos, e métodos invasivos, que usam eletrodos implantados. Eles diferem em resolução, riscos e requisitos clínicos.</p><a class="next" href="interfaces.html">VER COMO FUNCIONA ↗</a></div>
+</main></body></html>
